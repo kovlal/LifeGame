@@ -1,4 +1,4 @@
-package main
+package universe
 
 import (
 	"fmt"
@@ -99,18 +99,4 @@ func Step(a, b Universe) {
 			a.Set(x, y, b.Next(x, y))
 		}
 	}
-}
-
-func main() {
-
-	universe, universeCopy := NewUniverse(), NewUniverse()
-	universe.Seed()
-
-	for {
-		universe.Show()
-		Step(universeCopy, universe)
-		universe, universeCopy = universeCopy, universe
-		time.Sleep(time.Second / 30)
-	}
-
 }
