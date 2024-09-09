@@ -1,4 +1,4 @@
-package universe
+package main
 
 import (
 	"fmt"
