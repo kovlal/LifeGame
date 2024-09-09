@@ -1,3 +1,3 @@
-module github.com/kovlal/lifegame@v0.0.1
+module github.com/kovlal/lifegame
 
 go 1.22.5
